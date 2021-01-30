@@ -19,7 +19,7 @@ const Widget = styled.div`
     font-size: 14px;
     font-weight: 400;
     line-height: 1;
-  }
+  }  
 `;
 
 Widget.Header = styled.header`
@@ -36,6 +36,7 @@ Widget.Header = styled.header`
 
 Widget.Content = styled.div`
   padding: 24px 32px 32px 32px;
+  
   & > *:first-child {
     margin-top: 0;
   }

@@ -14,7 +14,7 @@ const GlobalStyle = createGlobalStyle`
     flex-direction: column;
     font-family: 'Lato', sans-serif;
     // Deixa branco no começo
-    
+    color: ${({ theme }) => theme.colors.contrastText};
   }
   html, body {
     min-height: 100vh;
@@ -31,7 +31,7 @@ const GlobalStyle = createGlobalStyle`
 export default function App({ Component, pageProps }) {
   return (
     <>
-      <GlobalStyle />
+      <GlobalStyle theme={theme}/>
       <ThemeProvider theme={theme}>
         <Component {...pageProps} />
       </ThemeProvider>
